@@ -28,7 +28,7 @@ streamlit.dataframe(fruits_to_show)
 
 
 streamlit.header('Fruityvice Fruit Advice')
-streamlit.text(fruityvice_reponse.json())
+streamlit.text(fruityvice_response.json())
 
 
 
