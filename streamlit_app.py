@@ -31,8 +31,6 @@ def get_fruitvice_data(this_fruit_choice):
   fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
   return fruityvice_normalized
 
-
-
 streamlit.header('Fruityvice Fruit Advice')
 try:
   fruit_choice = streamlit.text_input('What fruit would you like information about?')
@@ -46,7 +44,7 @@ except URLError as e:
   
 streamlit.write('The user entered ', fruit_choice)
 
-streamlit.text(fruityvice_response)
+#streamlit.text(fruityvice_response)
 
 streamlit.stop()
 
